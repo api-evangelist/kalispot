@@ -1,7 +1,27 @@
 aid: kalispot
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kalispot.png
 name: KaliSpot
-description: KaliSpot is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  KaliSpot is a fintech network operated by Outsource Monetic Group Inc. (OMG), an
+  Atlanta-headquartered startup with legal presence in Senegal and Morocco. KaliSpots are
+  Financial Inclusive Service Points (FISP) — ATM and interactive teller machine (ITM)
+  locations running a brand-agnostic, "phygital" infrastructure that bridges physical cash
+  and digital financial services. From a single access point, customers reach banks, mobile
+  money operators, and fintechs for 24/7 cash-in/cash-out (CICO), positioning KaliSpot as an
+  independent omnichannel ATM operator across Francophone West and Central Africa, with pilots
+  launched in Senegal and Côte d'Ivoire. Founded 2021; pre-seed funding from 500 Global and
+  Grenfell Holdings. No public developer API or documentation surface has been published to date.
 url: https://raw.githubusercontent.com/api-evangelist/kalispot/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +31,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Fintech
+- Financial Services
+- Payments
+- Financial Inclusion
+- Mobile Money
+- ATM Network
+- Banking
+- Africa
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/kalispot-domain-security.yml
 - type: Website
   url: https://kalispot.com
+- type: LinkedIn
+  url: https://www.linkedin.com/company/kalispot/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
